@@ -1,4 +1,4 @@
-import { React, useEffect , useRef} from 'react'
+import { React, useEffect, useRef } from 'react'
 import NavBar from './navbar'
 import Footer from './Footer'
 import '../contact.css';
@@ -680,63 +680,65 @@ function Contact() {
         e.preventDefault();
 
         emailjs
-        .sendForm('service_2whl4vr', 'template_eghh87r', form.current, {
-            publicKey: 'rgxdWFhqGMEfOJVSx',
-        })
-        .then(
-            () => {
-            console.log('SUCCESS!');
-            form.current.reset();
-            Swal.fire({
-                title: "You'r mail has been sent ",
-                icon: "success"
-              });
-            },
-            (error) => {
-            console.log('FAILED...', error.text);
-            form.current.reset();
-            Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Something went wrong!"
-              });
-            },
-        );
+            .sendForm('service_2whl4vr', 'template_eghh87r', form.current, {
+                publicKey: 'rgxdWFhqGMEfOJVSx',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    form.current.reset();
+                    Swal.fire({
+                        title: "You'r mail has been sent ",
+                        icon: "success"
+                    });
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    form.current.reset();
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Something went wrong!"
+                    });
+                },
+            );
     };
 
 
     return (
         <>
             <NavBar />
-            <div className="contact container">
-                <section className="contact-us" id="contact-section">
-                    <form id="contact" ref={form} onSubmit={sendEmail}>
+            <div className="container">
+                <div className="contact">
+                    <section className="contact-us" id="contact-section">
+                        <form id="contact" ref={form} onSubmit={sendEmail}>
 
-                        <div className="section-heading">
-                            <h4>Connect With Me !</h4>
-                        </div>
+                            <div className="section-heading">
+                                <h4>Connect With Me !</h4>
+                            </div>
 
-                        <div className="inputField">
-                            <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required />
+                            <div className="inputField">
+                                <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required />
                                 <span className="valid_info_name"></span>
-                        </div>
+                            </div>
 
-                        <div className="inputField">
-                            <input type="Email" name="email" id="email" placeholder="Your email" required="" />
-                            <span className="valid_info_email"></span>
-                        </div>
+                            <div className="inputField">
+                                <input type="Email" name="email" id="email" placeholder="Your email" required="" />
+                                <span className="valid_info_email"></span>
+                            </div>
 
-                        <div className="inputField">
-                            <textarea name="message" id="message" placeholder="Your message"></textarea>
-                            <span className="valid_info_message"></span>
-                        </div>
+                            <div className="inputField">
+                                <textarea name="message" id="message" placeholder="Your message"></textarea>
+                                <span className="valid_info_message"></span>
+                            </div>
 
-                        <div className="inputField btn">
-                            <input id="form-submit" type="submit" value="Send" />
-                        </div>
+                            <div className="inputField btn">
+                                <input id="form-submit" type="submit" value="Send" />
+                            </div>
 
-                    </form>
-                </section>
+                        </form>
+                    </section>
+                </div>
             </div>
             <Footer />
         </>
