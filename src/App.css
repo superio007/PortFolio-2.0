@@ -1,0 +1,210 @@
+body{
+  background-color: #171321 !important;
+  background: url(./assets/home-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  font-size: 25px;
+}
+#text,#text1 ,#Wrap ,#Wrap1{
+  color: rgb(225, 121, 244);
+}
+#homeLogo{
+  width: 40rem;
+  position: relative;
+}
+#homelogo1{
+  width: 250px;
+  position: relative;
+}
+.txt{
+  font-size: 30px
+}
+.round{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  color: #171321 !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.round:hover{
+  transition-delay:5s;
+  transition: ease-in-out;
+  box-shadow: 0px 0px 0px 4px rgba(168, 10, 168);
+  color: #171321 !important;
+}
+#Third{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#third{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#Third a{
+  margin-top: 18px;
+  font-size: 25px;
+  padding: 10px 25px;
+  background-color: #ffffff28;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid rgb(85,26,139);
+}
+#third a{
+  margin-top: 18px;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #ffffff28;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid rgb(85,26,139);
+}
+#Third a:hover{
+  border: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.151);
+  box-shadow: 2px 2px 2px 2px rgb(85,26,139);
+}
+#third a:hover{
+  border: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.151);
+  box-shadow: 2px 2px 2px 2px rgb(85,26,139);
+}
+a:hover{
+  border-bottom: 2px solid #a80aa8;
+  color: #db7093 !important;
+}
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1218px !important;
+}
+/* Footer Start */
+footer {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 4%;
+}
+footer p{
+  margin: 1%;
+}
+footer #First{
+  display: flex;
+  justify-content: center;
+}
+footer #second{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+  gap: 25px;
+}
+footer a{
+  color:#551a8b;
+}
+/* Footer End */
+.navbar-toggler{
+  background-color: white;
+}
+.offcanvas{
+  background-color: #551a8b;
+}
+.btn-close{
+  background-color: #f8f9fa;
+}
+.myPic{
+  width: 350px;
+  border-radius: 30px;
+}
+.myPic:hover{
+  transform: scale(1.1);
+}
+.icon{
+  width: 8rem;
+  height: 4rem;
+}
+.icon:hover{
+  transform: scale(1.20);
+  border-radius: 10px;
+}
+#html:hover{
+  -webkit-filter: drop-shadow(0 0 10px #e34c26);
+  filter: drop-shadow(0 0 10px #e34c26);
+}
+#vscode:hover{
+   -webkit-filter: drop-shadow(0 0 10px #0078d7);
+  filter: drop-shadow(0 0 10px #0078d7);
+}
+#nodejs:hover{
+   -webkit-filter: drop-shadow(0 0 10px #3c873a);
+  filter: drop-shadow(0 0 10px #3c873a);
+}
+#css:hover{
+  -webkit-filter: drop-shadow(0 0 10px #264de4);
+  filter: drop-shadow(0 0 10px #264de4);
+}
+#js:hover{
+  -webkit-filter: drop-shadow(0 0 10px #f0db4f);
+  filter: drop-shadow(0 0 10px #f0db4f);
+}
+#react:hover{
+  -webkit-filter: drop-shadow(0 0 10px #61DBFB);
+  filter: drop-shadow(0 0 10px #61DBFB);
+}
+#vue:hover{
+  -webkit-filter: drop-shadow(0 0 10px rgb(65,183,130));
+  filter: drop-shadow(0 0 10px rgb(65,183,130));
+}
+#node:hover{
+  -webkit-filter: drop-shadow(0 0 10px rgb(76,175,80));
+  filter: drop-shadow(0 0 10px rgb(76,175,80));
+}
+#java:hover{
+  -webkit-filter: drop-shadow(0 0 10px #497391);
+  filter: drop-shadow(0 0 10px #df8b1b);
+}#wordpress:hover{
+  -webkit-filter: drop-shadow(0 0 10px rgb(0,117,155));
+  filter: drop-shadow(0 0 10px rgb(0,117,155));
+}
+#jqery:hover{
+  -webkit-filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+  filter: drop-shadow(0 0 10px rgb(196, 233, 245));
+}
+@media screen and (max-width: 767px){
+  body{
+    background: url(./assets/home-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .txt{
+    font-size: 15px;
+    text-align: center;
+  }
+  #DashLogo{
+    width:150px;
+  }
+  .round{
+    width: 35px;
+    height: 35px;
+  }
+  #Third a{
+    font-size: 20px;
+  }
+  .container{
+    max-width: 550px !important;
+  }
+  .myPic{
+    width: 230px;
+  }
+}
