@@ -1,13 +1,13 @@
-import { React, useEffect } from 'react'
+import { React } from 'react'
 import NavBar from './navbar'
 import Footer from './Footer'
 import '../Projects.css';
 
 function Projects() {
-  useEffect(() => {
+  // useEffect(() => {
 
 
-  })
+  // })
   return (
     <>
       <NavBar />
