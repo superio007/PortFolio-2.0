@@ -4,6 +4,7 @@ import Footer from './Footer'
 import '../contact.css';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+// hi this is demo comment
 
 function Contact() {
     useEffect(() => {
