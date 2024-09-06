@@ -67,7 +67,7 @@ function About() {
     loop()
   })
   const DownloadCv = () => {
-    const pdfUrl = "Kiran-Dhoke-Resume.pdf";
+    const pdfUrl = "Kiran Dhoke Resume.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Kiran Dhoke Resume.pdf"; // specify the filename
